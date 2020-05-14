@@ -132,6 +132,7 @@ async function init() {
     }
     const outputHTML = render(employees);
     await fs.writeFile(outputPath, outputHTML)
+    console.log("Successfully created team html!")
 }
 
 init();
